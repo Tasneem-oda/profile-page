@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #04012e;
+}
+.login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 40%;
+    border: 1px solid white;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+.login input{
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid black;
+    font-size: 16px;
+    margin: 10px 0;
+}
+.loginbtn{
+    border: 1px solid white;
+    color: white;
+    background: linear-gradient(120deg , #010137 , #200bc5);
+    cursor: pointer;
+}
+.profile{
+    width: 80%;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    overflow: hidden;
+}
+.profile .image_area{
+    width: 20%;
+    overflow: hidden;
+    border: 1px solid white;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    height: 80%;
+}
+.profile .image_area img{
+    width: 110%;
+    border-radius: 5px;
+    object-fit: cover;
+    margin-bottom: 20px;
+    position: relative;
+}
+.profile .image_area a{
+    background: linear-gradient(120deg , #010137 , #200bc5);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.profile .posts_area{
+   width: 80%;
+   border: 1px solid white;
+   border-radius: 10px;
+   height: 85%;
+   margin: 30px;
+   overflow-y:scroll;
+   
+}
+::-webkit-scrollbar{
+    background-color: #ffffff;
+    width: 10px;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#04012e ,#200bc5);
+    border-radius: 20px;
+    width: 100%;
+    cursor: pointer;
+}
+.profile .posts_area .post{
+    background-color: white;
+    color: #010125;
+    margin: 20px;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+.profile .posts_area .post h3{
+    border-bottom: 1px solid #010125;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.profile .posts_area .post p{
+    font-size: 18px;
+    padding: 10px;
+}
+.profile input{
+    width:90%;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+.profile textarea{
+    min-width: 90%;
+    max-width: 90%;
+    min-height: 200px;
+    max-height: 200px;
+    font-size: 18px;
+    padding: 10px;
+    display: block;
+    margin-bottom: 20px;
+}
+.profile button{
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 17px;
+    cursor: pointer;
+    background:linear-gradient( 45deg,#04012e ,#200bc5);
+}
+.update_image_input{
+    /* display: none; */
+}
+.update_image_lable{
+    border: 2px dashed white;
+    padding: 10px;
+    margin: 30px;
+    cursor: pointer;
+}
